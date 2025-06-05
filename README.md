@@ -16,6 +16,7 @@ To build a scalable, secure, and efficient data pipeline that:
 - Enables rich visualizations for analytics and reporting.  
 
 ---
+![image alt](https://github.com/ChetanDaharwal/Azure_DE_project_2/blob/e045fd0911f1c998b856c93c0f83cb1503269748/1748729843590.jpeg)
 
 ### 🧱 Architecture Overview
 
