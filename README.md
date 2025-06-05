@@ -47,8 +47,7 @@ To build a scalable, secure, and efficient data pipeline that:
 | **Azure Databricks**     | Data transformation with PySpark & Auto Loader |
 | **Delta Lake**           | ACID-compliant data storage                     |
 | **Unity Catalog**        | Centralized governance and metadata management |
-| **Azure Synapse**        | Data warehousing, external tables, SQL analytics |
-| **Power BI**             | Visualization and interactive dashboards        |
+| **Delta Live Table**     | implementing delta live table on top od deltalake |
 
 ---
 
@@ -62,16 +61,14 @@ To build a scalable, secure, and efficient data pipeline that:
 
 ### 2️⃣ Data Transformation (Silver Layer)
 
-- Parameterized **Databricks notebooks** triggered through **ForEach activity** in ADF for scalable notebook execution.  
+- Parameterized **Databricks notebooks** triggered through **ForEach activity** in Data Bricks for scalable notebook execution.  
 - Data copied from Bronze to Silver using Auto Loader and written in Delta format.  
 - Applied **PySpark transformations**, cleaned datasets and managed schema evolution.  
 
-### 3️⃣ Data Modeling (Gold Layer)
+### 3️⃣ Gold Delta Table (Gold Layer)
 
 - Built **Delta Live Tables (DLT)** on top of Silver Layer for structured, query-optimized data.  
-- Unity Catalog used at **administrator level** to manage and govern data assets centrally.  
-- Served clean datasets to **Azure Synapse Analytics** using `OPENROWSET()` with **external tables**.  
-- Built **flat tables**, **aggregated views**, and **star schema models** for reporting.  
+- Unity Catalog used at **administrator level** to manage and govern data assets centrally.   
 
 ---
 
@@ -82,8 +79,7 @@ To build a scalable, secure, and efficient data pipeline that:
 - Implemented **parameterized notebooks** and **loop-driven automation** for modular ETL design.  
 - Managed secure service-to-service connections using **Microsoft Entra ID** (App ID, Secret, Tenant ID).  
 - Built **Unity Catalog-based governance** for better control over metadata and lineage.  
-- Used **Delta Live Tables** for efficient and reliable gold layer modeling.  
-- Delivered actionable insights using **Power BI dashboards** backed by Synapse views.  
+- Used **Delta Live Tables** for efficient and reliable gold layer modeling.   
 
 ---
 
@@ -94,7 +90,6 @@ To build a scalable, secure, and efficient data pipeline that:
 - [Delta Lake Guide](https://delta.io/)  
 - [Unity Catalog Overview](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/)  
 - [Synapse Analytics Overview](https://learn.microsoft.com/en-us/azure/synapse-analytics/)  
-- [Power BI Docs](https://learn.microsoft.com/en-us/power-bi/)  
 
 ---
 
