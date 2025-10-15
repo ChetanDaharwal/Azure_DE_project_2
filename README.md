@@ -94,8 +94,5 @@ To build a scalable, secure, and efficient data pipeline that:
 
 ---
 
-## 🤝 Acknowledgements
-
-A special thanks to [Ansh Lamba](https://www.linkedin.com/in/anshlamba/) for his guidance and content that inspired this project build.
 
         
